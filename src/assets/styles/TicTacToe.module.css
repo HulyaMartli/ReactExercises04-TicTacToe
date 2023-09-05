@@ -1,0 +1,14 @@
+.container {
+    height: 100%;
+    border: 2px solid var(--color);
+    width: 50%;
+}
+
+button {
+    background-color: var(--primary--color);
+    color: var(--color);
+    min-height: 180px;
+    height: 100%;
+    width: 33.33%;
+
+}
