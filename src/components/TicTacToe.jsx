@@ -26,12 +26,13 @@ export function TicTacToe() {
 
 
     return (
+        <>
         <div className={styles.board}>
             {moves.map((m, index) => <Square key={index} index={index} content={m} onMakeMove={makeMove} winner={winner}/>)}
-            {winner && <p>Congrats {winner} wins!</p>}
-            {(!winner && !moves.includes(null)) && <p>It&apos;s a tie!</p>}
         </div>
-        
+        {winner && <p>Congrats {winner} wins!</p>}
+        {(!winner && !moves.includes(null)) && <p>It&apos;s a tie!</p>}
+        </>
     )
 }
 
